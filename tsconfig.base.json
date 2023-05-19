@@ -15,7 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@dnd-masters/character-form": ["libs/character-form/src/index.ts"]
+      "@dnd-masters/character-form": ["libs/character-form/src/index.ts"],
+      "@dnd-masters/character-form-core": [
+        "libs/character-form-core/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]
