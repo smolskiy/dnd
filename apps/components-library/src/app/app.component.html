@@ -1,1 +1,16 @@
-<dnd-masters-nx-welcome></dnd-masters-nx-welcome>
+<div class="wrapper">
+  <section class="list-components">
+    <article
+      class="component"
+      *ngFor="let item of data"
+      (click)="componentClicked(item)"
+    >
+      {{ item.name }}
+    </article>
+  </section>
+  <section class="main-screen">
+    <article>
+      <ng-template #selectedComponent> </ng-template>
+    </article>
+  </section>
+</div>

@@ -1,0 +1,24 @@
+.wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+
+  .list-components {
+    width: 20%;
+    height: 100%;
+    padding: 10px;
+
+    .component{
+      padding: 10px;
+      border-bottom: solid 1px gray;
+    }
+  }
+
+  .main-screen {
+    width: 80%;
+    height: 100%;
+    padding: 10px;
+    border: 1px solid black;
+  }
+}
+
