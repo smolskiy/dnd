@@ -5,4 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './character-form.component.html',
   styleUrls: ['./character-form.component.scss'],
 })
-export class CharacterFormComponent {}
+export class CharacterFormComponent {
+  constructor() {}
+
+  private buildForm(): void {}
+}

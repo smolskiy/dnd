@@ -8,7 +8,7 @@ import {
   ViewContainerRef,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CharacterFormContainerComponent } from '@dnd-masters/character-form';
+import { CharacterFormComponent } from '@dnd-masters/character-form';
 
 export interface ComponentItem {
   name: string;
@@ -29,29 +29,30 @@ export class AppComponent {
   public data: ComponentItem[] = [
     {
       name: 'Component1',
-      class: CharacterFormContainerComponent,
+      class: CharacterFormComponent,
     },
     {
       name: 'Component2',
-      class: CharacterFormContainerComponent,
+      class: CharacterFormComponent,
     },
     {
       name: 'Component3',
-      class: CharacterFormContainerComponent,
+      class: CharacterFormComponent,
     },
     {
       name: 'Component4',
-      class: CharacterFormContainerComponent,
+      class: CharacterFormComponent,
     },
     {
       name: 'Component5',
-      class: CharacterFormContainerComponent,
+      class: CharacterFormComponent,
     },
   ];
 
   constructor(private readonly applicationRef: ApplicationRef) {}
 
   public componentClicked(item: ComponentItem): void {
+    console.log('test');
     const component = createComponent(item.class, {
       environmentInjector: this.applicationRef.injector,
     });
